@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+  display: block;
+}
+html, body, h1, h2, h3, ul, li, a, p,
+article, aside, footer, header, main, nav, section {
+  padding: 0;
+  margin: 0;
+}
+body{
+background-image: url(vlagrotterdam2.jpg) ;
+
+}
+header{
+  background-color: green;
+  color: white;
+  
+}
+
+.banner{
+background-color: black;
+color: white;
+font-size: 15px;
+
+}
+.Regristratie {
+width: 60%;
+height: auto;
+background-color: black;
+float: right;
+
+}
+ul {
+  padding-inline-start: 0px;
+}
+}
+table, td{
+ border: 1px solid black;
+    padding: 6px;
+}
+.form-control {
+margin: auto;
+}
+.wachtwoord{
+margin: auto;
+width: 50% ;
+background-color: green;
+
+
+}
+.Formw{
+padding: 5px;
+background-color: darkgreen;
+
+}

@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+  display: block;
+}
+
+html, body, h1, h2, h3, ul, li, a, p, 
+article, aside, footer, header, main, nav, section {
+  padding: 0;
+  margin: 0;
+}  
+
+       .banner {       
+   width: 85%;
+    height: 12%; 
+    background-color: greenyellow;
+    color: darkgreen;
+    font-size: 15px;  
+    padding: 2px;
+           margin: auto;
+   } 
+         
+
+body{
+    
+    background-image: url("vlagrotterdam2.jpg");
+}
+nav { 
+    width: 85%; 
+    height: inherit;
+	margin: auto;
+	padding: 0;
+	background-color: greenyellow;
+}
+
+nav:after {
+    content: ""; 
+	display:table;
+	clear:both;
+}
+
+nav ul {
+	float: left;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	background-color: greenyellow;
+	}
+
+
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color: darkgreen;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: greenyellow; }
+
+
+nav a:hover { 
+	background-color: yellow; 
+}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; 
+}
+	
+
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+
+nav ul  li {
+	width:170px;
+	float: none;
+	display:list-item;
+	position: relative;
+}
+
+
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	left:170px; 
+}
+section {
+    width: 97%; 
+    padding: 8px; 
+  background-color: green;
+    color: white;
+  margin-top: 10px;
+  margin: auto; 
+}
+
+article {
+    width: 95%;
+    font-size: 25px; 
+  background-color: greenyellow;
+ color: black;
+  margin-top: 5px;
+    margin: auto;
+  padding: 10px 15px;
+    
+  
+}
+
+main {
+    border-color: aqua; 
+    padding: 3%;
+  width: 85%;
+  margin: auto;
+}
+    aside{ 
+    display: none;
+    }
+footer{ 
+width: auto; 
+float: both;
+padding: 5px 20px; 
+    bottom: auto; 
+}  
+
+@media screen and (min-width: 600px){ 
+    .banner { 
+    width: 100%;
+       font-size: 20px;    
+    }
+    nav{
+    float: left;
+    width: 30%;
+       
+    }
+    main { 
+    float: right; 
+    width: 60%
+    }
+    footer{
+   clear: both;
+        float: right;
+
+    }
+
+}
+ @media screen and (min-width: 900px){ 
+     .banner{ 
+     width: 100%;
+    font-size: 20px;
+     }
+     nav{ 
+     width: 100%;
+    margin: auto;
+     }
+     nav ul {
+	float: left;     
+         }
+     nav ul li { 
+     float: left;
+     }
+     main{ 
+     float: left 
+     }
+      aside{ 
+     display: block;
+         margin: 2%;
+     
+     
+     }
+     footer{
+         float: left; 
+  
+     }
+     
